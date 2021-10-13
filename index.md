@@ -1,5 +1,5 @@
-title: Bem-vindo a Página inicial do joaomesq
-description: Fique atento nos meus projectos
+##title: Bem-vindo a Página inicial do joaomesq
+##description: Fique atento nos meus projectos
 
 You can use the [editor on GitHub](https://github.com/joaomesq/joaomesq.github.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
 
