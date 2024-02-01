@@ -1,0 +1,336 @@
+*{
+	padding: 0;
+	margin: 0;
+	color: #fff;
+	box-sizing: border-box;
+	font-family: "Sample", sans-serif;
+	
+}
+body{
+	background:  rgb(2, 6, 18);
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+
+.cabecalho{
+	padding: 15px 150px;
+	display: flex;
+	justify-content: space-between;
+	position: fixed;
+	top: 0;
+	width: 100%;
+
+	background: rgb(2, 6, 15);
+}
+.cabecalho .menu ul,
+ .menu ul li,
+ .menu ul li a
+ { 
+  	color: rgb(114, 121, 139);
+  }
+  .cabecalho a:hover{
+  	text-decoration: underline;
+  	padding: 2px;
+
+  	transition: 1s;
+  }
+  .cabecalho h3{
+  	color: rgb(214, 214, 220);
+  }
+.cabecalho .menu ul li{
+	display: inline-block;
+	margin: 5px;
+}
+
+.home{
+	padding: 10px;
+	margin-top: 230px;
+	display: grid;
+	grid-template-columns: 0.5fr 1fr 1fr;
+
+}
+
+.socias{
+	margin-top: 80px;
+}
+.socias img{
+	width: 40px;
+	height: 40px;
+}
+#linha{
+	width: 2px;
+	height: 100px;
+	
+	background: rgb(0, 217, 255);
+
+	margin: 5px;
+	margin-left: 17px;
+	margin-bottom: 0;
+}
+
+.apresentacao{
+	font-size: 30px;
+	margin-left: -120px;
+}
+.apresentacao h1, h4, button{
+	margin-top: 10px;
+}
+.apresentacao h1{
+	color: rgb(177, 0, 240);
+}
+.apresentacao p{
+	font-size: 15px;
+	color: rgb(161, 170, 190);
+}
+.apresentacao h4{
+	font-size: 23px;
+	color: rgb(32, 140, 255);
+}
+.apresentacao a{
+	font-size: 12px;
+	padding: 15px;
+	margin-top: 25px;
+	background: inherit;
+    
+    border: 1px solid;
+	border-color:  rgb(32, 140, 255)rgb(177, 17, 250) rgb(177, 17, 250) rgb(32, 140, 255) ;
+}
+
+.foto img{
+	width: 400px;
+	height: 300px;
+	border-radius: 25%;
+	padding: 10px;
+}
+
+.seccoes{
+	display: none;
+	background: rgba(0, 0, 0, 0.1);
+
+	transition: 4s linear;
+	padding: 10px;
+}
+.seccoes section{
+	padding: 5px;
+}
+.seccoes h2{
+	color: rgb(214, 214, 220);
+}
+.seccoes h5, p{
+	color: rgb(114, 121, 139);
+}
+.sobre{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.habilidades_projetos{
+	margin-top: 10px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.habilidades{
+	margin-right: 25px;
+}
+.habilidades h5{
+	border-bottom: 4px solid rgb(0, 217, 255);
+	border-radius: 2px;
+	margin-top: 5px;
+}
+
+.projetos ul{
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+
+}
+.projetos ul li{
+	background: #252525;
+	margin: 5px;
+	padding: 1px;
+
+    border: none;
+}
+.projetos figure{
+	width: 200px;
+	height: 150px;
+
+	text-align: center;
+
+	border-left: solid 2px rgb(0, 217, 255);
+}
+.projetos ul li figure img{
+	width: 199px;
+	height: 100px;
+
+	border-radius: inherit;
+}
+/*Definindo o nivél de cada habilidade*/
+#html{
+	width: 100%;
+}
+#html::after{
+	content: "90%";
+	color: rgb(177, 17, 250);
+	margin-left: 89%;
+	margin-bottom: 5px;
+	padding: 1px;
+	border-radius: 4px;
+}
+
+#css{
+	width: 90%;
+}
+#css::after{
+	content: "80%";
+	color: rgb(177, 17, 250);
+	margin-left: 88%;
+	padding: 1px;
+	border-radius: 4px;
+}
+
+#js{
+	width: 60%;
+}
+#js::after{
+	content: "52%";
+	color: rgb(177, 17, 250);
+	margin-left: 73%;
+	padding: 1px;
+	border-radius: 4px;
+}
+
+#php{
+	width: 85%;
+}
+#php::after{
+	content: "76%";
+	color: rgb(177, 17, 250);
+	margin-left: 88%;
+	padding: 1px;
+	border-radius: 4px;
+}
+
+#mysql{
+	width: 50%;
+}
+#mysql::after{
+	content: "40%";
+	color: rgb(177, 17, 250);
+	margin-left: 75%;
+	padding: 1px;
+	border-radius: 4px;
+}
+
+#git{
+	width: 80%;
+}
+#git::after{
+	content: "70%";
+	color: rgb(177, 17, 250);
+	margin-left: 88%;
+	padding: 1px;
+	border-radius: 4px;
+}
+/* FIM */
+
+.contato ul li{
+	color: rgb(114, 121, 139);
+	margin-top: 8px;
+}
+
+.rodape{
+	text-align: center;
+	padding: 10px;
+
+	background: rgb(2, 6, 15);
+}
+.redes ul li{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+
+	margin: 15px;
+}
+.redes a{
+	width: inherit;
+	height: inherit;
+}
+.redes img{
+	width: inherit;
+	height: inherit;
+
+	border-radius: 8px;
+}
+
+/*RENPONSIVE*/
+/*SMAL DEVICES*/
+@media screen and (max-width:  1000px){
+	.cabecalho{
+		padding: 40px;
+	}
+	.cabecalho nav{
+		display: none;
+	}
+
+	.principal{
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr;
+	}
+	.home{
+		grid-template-columns: 100%;
+		margin-top: 100px;
+	}
+	.home section{
+		margin-top: 50px;
+		text-align: center;
+		width: 100%;
+	}
+	.socias{
+		display: none;
+	}
+	.apresentacao{
+		margin: unset;
+	}
+	.foto img{
+		width: inherit;
+		height: inherit;
+		border-radius: 4px;
+		padding: unset;
+	}
+
+	.seccoes{
+		display: unset;
+		grid-template-columns: 100%;
+
+		padding: 0;
+	}
+	.seccoes section{
+		padding: 5px;
+	}
+	.sobre{
+		grid-template-columns: 100%;
+	}
+	.sobre .vazio{
+		display: none;
+	}
+    .habilidades_projetos{
+    	grid-template-columns: 100%;
+    }
+    .projetos{
+    	padding: 0;
+    	margin: 0;
+    	background:  rgba(2, 6, 25, 0.7);
+    }
+    .projetos h2{
+    	margin-top: 20px;
+    }
+}
+
+
