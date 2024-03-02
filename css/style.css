@@ -3,7 +3,7 @@
 	margin: 0;
 	color: #fff;
 	box-sizing: border-box;
-	font-family: "Sample", sans-serif;
+	font-family: "Roboto";
 	
 }
 body{
@@ -50,8 +50,12 @@ a{
 	padding: 10px;
 	margin-top: 230px;
 	display: grid;
-	grid-template-columns: 0.5fr 1fr 1fr;
+	grid-template-columns: 25% 25% 50%;
 
+}
+.home section{
+	margin-top: 0px;
+	height: 300px;
 }
 
 .socias{
@@ -100,11 +104,23 @@ a{
 	border-color:  rgb(32, 140, 255)rgb(177, 17, 250) rgb(177, 17, 250) rgb(32, 140, 255) ;
 }
 
+.foto{
+		background-image: url(../img/i2.jpg);
+		background-attachment: scroll;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center top;
+
+		border-radius: 8px;
+		width: 100%;
+		height: 100%;
+}
 .foto img{
-	width: 400px;
+	width: 100%;
 	height: 300px;
-	border-radius: 25%;
+	border-radius: 20px;
 	padding: 10px;
+	display: none;
 }
 
 .seccoes{
@@ -128,7 +144,7 @@ a{
 	grid-template-columns: 1fr 1fr;
 }
 
-.habilidades_projetos{
+.habilidades{
 	margin-top: 10px;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
@@ -143,33 +159,6 @@ a{
 	margin-top: 5px;
 }
 
-.projetos ul{
-	display: flex;
-	justify-content: space-evenly;
-	flex-wrap: wrap;
-
-}
-.projetos ul li{
-	background: #252525;
-	margin: 5px;
-	padding: 1px;
-
-    border: none;
-}
-.projetos figure{
-	width: 200px;
-	height: 150px;
-
-	text-align: center;
-
-	border-left: solid 2px rgb(0, 217, 255);
-}
-.projetos ul li figure img{
-	width: 199px;
-	height: 100px;
-
-	border-radius: inherit;
-}
 /*Definindo o nivél de cada habilidade*/
 #html{
 	width: 100%;
@@ -281,11 +270,11 @@ a{
 	.principal{
 		display: grid;
 		grid-template-columns: 1fr;
-		grid-template-rows: 1fr 1fr;
 	}
 	.home{
 		grid-template-columns: 100%;
 		margin-top: 100px;
+		padding: 0;
 	}
 	.home section{
 		margin-top: 50px;
@@ -298,11 +287,22 @@ a{
 	.apresentacao{
 		margin: unset;
 	}
+	.foto{
+		height: 100%;
+		background-image: url(../img/b.jpg);
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: top center;
+
+		border-radius: 0;
+	}
 	.foto img{
 		width: inherit;
 		height: inherit;
 		border-radius: 4px;
 		padding: unset;
+		display: none;
 	}
 
 	.seccoes{
@@ -310,26 +310,40 @@ a{
 		grid-template-columns: 100%;
 
 		padding: 0;
+		margin-top: 0!important;
 	}
 	.seccoes section{
 		padding: 5px;
 	}
 	.sobre{
+		height: 300px;
 		grid-template-columns: 100%;
 	}
 	.sobre .vazio{
 		display: none;
 	}
-    .habilidades_projetos{
+    .habilidades{
     	grid-template-columns: 100%;
     }
-    .projetos{
-    	padding: 0;
-    	margin: 0;
-    	background:  rgba(2, 6, 25, 0.7);
+
+    /* Efeito paralax */
+    #habilidades{
+    	padding: 5;
+        width: 100%;
+        height: 300px;            	
+    	background-image: url(../img/b.jpg);
+    	background-repeat: no-repeat;
+    	background-size: cover;
+    	background-position: right center;
+    	background-attachment: fixed;
+
     }
-    .projetos h2{
-    	margin-top: 20px;
+    .habilidades > div{
+    	background:  rgba(2, 6, 18, 0.4);
+    	width: 100%;
+    }
+    .habilidades > div > h5{
+    	color: #fff;
     }
 }
 
