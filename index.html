@@ -1,102 +1,151 @@
 <!DOCTYPE html>
 <html>
-<head lang="pt-ao">
-     <meta charset="utf-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1">
-     <link rel="stylesheet"  href="./css/style.css">
+<head>
+	<meta charset="utf-8">
+	<meta name="name" content="João Mesquita">
+	<meta name="description" content="Portólio de João Mesquita, desenvolvedor web procurando experiência">
+	<meta name="keywords" content="João-Mesquita, Desenvolvedor-Web, Desenvolvedor, Conhecimento"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+	<title>João Mesquita | Portfólio</title>
 
-     <title>João Mesquita | Portfólio</title>
+	<link rel="stylesheet" href="./css/custom.css">
+
+	<!-- BOOTSTRAP -->
+	<link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
 </head>
 <body>
-     <header class="cabecalho">
-          <h3><\> Mesquita</h3>
-          <nav class="menu">
-               <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="#sobre" id="link_sobre">Sobre</a></li>
-                    <li><a href="#habilidades" id="link_habilidades" onclick="abrir_seccoes()">Habilidades</a></li>
-                    <li><a href="#contato" id="link_contato">Contato</a></li>
-               </ul>
-          </nav>
-     </header>
+	<header class="cabecalho col-12 fixed-top">
+		<div class="row justify-content-around">
+		<div class="nome col-sm-12 col-lg-4 p-3">
+			<h3><\> Mesquita</h3>
+		</div>
 
-     <main class="principal">
-          <article class="home">
-          <section class="socias">
-               <ul>
+		<div class="menu col-lg-6 p-3">
+			<nav>
+				<ul>
+					 <li><a href="index.html">Home</a></li>
+					 <li><a href="#sobre" id="link_sobre">Sobre</a></li>
+					 <li><a href="#projetos" id="link_projetos">Projetos</a></li>
+					 <li><a href="#habilidades" id="link_habilidades">Habilidades</a></li>
+					 <li><a href="#contato" id="link_contato">Contato</a></li>
+				</ul>
+		   </nav>
+		</div>
+	</div>
+	</header>
+
+	<main class="container-fluid">
+		<article class="home row">
+			<section class="socias col-sm-12 col-lg-1 p-2">
+				<ul>
                     <li><a href="https://github.com/joaomesq" target="_balank"><img src="./img/redes/githubcinza.png" alt="Link Github"></a></li>
                     <li><a href="#" target="_balank"><img src="./img/redes/linkedincinza.png" alt="Link Linkedin"></a></li>
                     <li><a href="https://web.facebook.com/joaobaptistaeuclides.joao" target="_balank"><img src="./img/redes/facebookcinza.png" alt="Link facebook"></a></li>
                     <li id="linha"></li>
                </ul>
-          </section>
-          <section class="apresentacao">
-               <p>Olá, meu nome é</p>
+			</section>
+
+			<section class="apresentacao col-sm-12 col-lg-5 p-2">
+				<p>Olá, meu nome é</p>
                
                <h1>João Mesquita</h1>
 
                <h4>Desenvolvedor Web</h4>
-               <a href="#seccoes" id="btn_portfolio">Conheça meu portfólio</a>
-          </section>
-          <section class="foto">
-               <img src="./img/p1.jpg" alt="Imagem do portfólio">
-          </section>
-     </article>
+               <a href="#sobre" id="btn_portfolio">Conheça meu portfólio</a>
+			</section>
 
-     <article class="seccoes" id="seccoes">
-          <section class="sobre" id="sobre">
-               <div class="vazio"></div>
-               <div class="conteudo">
-               <h2>Sobre mim</h2>
-               <br>
-               <p>
-                    Olá, meu nome é João Mesquita e sou desenvolvedor web. A programação é mnha paixão, meu trabalho e meu hobby. Meus pontos fortes se moldam com HTML, CSS, JavaScript no Fornt-End e PHP e Mysql no Back-End. Me dedico e estudo diariamente com muito foco e empenho para entender mais das tecnologias e fortalecer minhas bases. Estou em constante aprendizado e em busca de oportunidades para adquirir experiência e aprimorar meus conhecimentos criando projetos pessoais sendo mentorado por amigos desenvolvedores.
-               </p>
+			<section class="foto col-sm-12 col-lg-6 p-2 rounded">
+				<figure>
+					<img src="./img/p1.jpg">
+				</figure>
+			</section>
+		</article>
 
-               </div>
-          </section>
+		<article class="seccoes row" id="seccoes">
+			<section class="sobre col-sm-12 col-lg-6 p-2" id="sobre">
+						<h3>Sobre mim</h3>
+						<p>
+							Olá, meu nome é João Mesquita e sou desenvolvedor web. 
+							A programação é mnha paixão, meu trabalho e meu hobby. 
+							Meus pontos fortes se moldam com HTML, CSS, JavaScript no Fornt-End e PHP e Mysql no Back-End. 
+							Me dedico e estudo diariamente com muito foco e empenho para entender mais das tecnologias e fortalecer minhas bases. 
+							Estou em constante aprendizado e em busca de oportunidades para adquirir experiência e aprimorar meus conhecimentos 
+							criando projetos pessoais sendo mentorado por amigos desenvolvedores.
+						 </p>
+			</section>
 
-          <section class="habilidades" id="habilidades">
-               <div class="habilidades">
-               <h2>Habildades</h2>
-               <br>
-               <h5 id="html">HTML</h5>
-               <h5 id="css">CSS</h5>
-               <h5 id="js">JavaScript</h5>
-               <h5 id="php">PHP</h5>
-               <h5 id="mysql">MySql</h5>
-               <h5 id="git">Git</h5>
-               </div>
-          </section>
+			<section class="projetos col-sm-12 col-lg-6 justify-content-between" id="projetos">
+				<h3>Projetos</h3>
+				<div>
+					<figure class="rounded">
+						<a href="./img/nossaterrapng.png" target="_blank">
+							<img src="./img/nossaterrapng.png" alt="Site de turismo" class="rounded">
+						    <figcaption><a href="#">Site de turismo</a></figcaption>
+						</a>
+					</figure>
+					<figure class="rounded">
+						<a href="./img/ipag.png" target="_blank">
+							<img src="./img/ipag.png" alt="Site de apresentação Ipag" class="rounded">
+						    <figcaption><a href="https://baptistamesquita.github.io/">Apresentação do Ipag</a></figcaption>
+						</a>
+					</figure>
+					<figure class="rounded">
+						<a href="./img/cefac1.png" target="_blank">
+						    <img src="./img/cefac1.png" alt="Portal escolar" class="rounded">
+						    <figcaption><a href="#">Portal Escolar</a></figcaption>
+					    </a>
+					</figure>
+					<figure class="rounded">
+						<a href="./img/loja.png" target="_blank">
+							<img src="./img/loja.png" alt="E-commerce" class="rounded">
+						    <figcaption><a href="#">E-commerce</a></figcaption>
+						</a>
+					</figure>
+				</div>	
+			</section>
 
-          <section class="contato" id="contato">
-               <div class="contato">
-                    <h2>Contato</h2>
-                    <br>
+			<section class="habilidades col-sm-12 col-lg-6 p-2 rounded">
+				<div id="habilidades">
+				<h3>Habildades</h3>
+				<br>
+                <h6 id="html">HTML</h6>
+                <h6 id="css">CSS</h6>
+                <h6 id="js">JavaScript</h6>
+                <h6 id="php">PHP</h6>
+                <h6 id="mysql">MySql</h6>
+                <h6 id="git">Git</h6>
+			</div>
+			</section>
+
+			<section class="contato col-sm-12 col-lg-6 p-2" id="contato">
+				    <h3>Contato</h3>
                     <ul>
                          <li>Email: joaobmesquita1@gmail.com</li>
                          <li>Telefone: +244 923 943 421</li>
                          <li>Localização: ANGOLA - HUAMBO</li>
                     </ul>
-               </div>
-          </section>
-     </article>
-     </main>
+			</section>
+		</article>
+	</main>
 
-     <footer class="rodape">
-          <div class="redes">
-               <ul>
-                    <li><a href="https://web.facebook.com/joaobaptistaeuclides.joao" target="_balank"><img src="./img/redes/facebookwhite.png" alt="imagem de link para o facebook"></a></li>
-                    <li><a href="https://t.me/joaomesqui" target="_balank"><img src="./img/redes/telegramwhite.png" alt="imagem de link para o telegram"></a></li>
-                    <li><a href="https://wa.me/244923943421" target="_balank"><img src="./img/redes/whatsappwhite.png" alt="imagem de link para o WatsApp"></a></li>
-                    <li><a href="https://github.com/joaomesq" target="_balank"><img src="./img/redes/githubwhite.png" alt="imagem de link para o github"></a></li>
-               </ul>
-          </div>
-          <div class="direitos">
-               <p>"Chanax: Desenvolvendo ideias, criando soluções"</p>
-               <p>&copy; 2023 - Todos os direitos reservados a Chanax Tecnolog.</p>
-          </div>
-     </footer>
-     <script type="text/javascript" src="./js/efeitos.js"></script>
+	<footer class="rodape">
+		<div class="redes">
+			<ul>
+				 <li><a href="https://web.facebook.com/joaobaptistaeuclides.joao" target="_balank"><img src="./img/redes/facebookwhite.png" alt="imagem de link para o facebook"></a></li>
+				 <li><a href="https://t.me/joaomesqui" target="_balank"><img src="./img/redes/telegramwhite.png" alt="imagem de link para o telegram"></a></li>
+				 <li><a href="https://wa.me/244923943421" target="_balank"><img src="./img/redes/whatsappwhite.png" alt="imagem de link para o WatsApp"></a></li>
+				 <li><a href="https://github.com/joaomesq" target="_balank"><img src="./img/redes/githubwhite.png" alt="imagem de link para o github"></a></li>
+			</ul>
+	   </div>
+
+	   <div class="direitos">
+			<p>"Chanax: Desenvolvendo ideias, criando soluções"</p>
+			<p>&copy; 2023 - Todos os direitos reservados a Chanax Tecnolog.</p>
+	   </div>
+	</footer>
+     
+	<script src="./js/efeitos.js"></script>
+     <!-- BOOTSTRAP -->
+     <script src="./bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>

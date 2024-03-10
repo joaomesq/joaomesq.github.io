@@ -1,0 +1,309 @@
+body {
+	background: rgb(2, 6, 18) !important;
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+section {
+	height: 300px;
+}
+
+#linha {
+	width: 2px;
+	height: 100px;
+
+	background: rgb(0, 217, 255);
+
+	margin: 5px;
+	margin-left: 17px;
+	margin-bottom: 0;
+}
+
+
+.cabecalho {
+	background: rgb(2, 6, 15);
+}
+
+.menu {
+	display: none;
+}
+
+.cabecalho h3,
+.sobre h3,
+.projetos h3,
+.contato h3 {
+	color: #fff;
+}
+
+.home {
+	margin-top: 90px !important;
+}
+
+.socias {
+	display: none;
+}
+
+/*Apresentacao*/
+.apresentacao {
+	text-align: center;
+}
+
+.apresentacao h1,
+h4 {
+	margin-top: 10px;
+}
+
+.apresentacao h1 {
+	color: rgb(177, 0, 240);
+}
+
+.apresentacao p {
+	font-size: 15px;
+	color: rgb(161, 170, 190);
+}
+
+.apresentacao>h4 {
+	font-size: 23px;
+	color: rgb(32, 140, 255);
+	margin-bottom: 20px;
+}
+
+.apresentacao a {
+	font-size: 12px;
+	padding: 15px;
+	margin-top: 25;
+	background: inherit;
+
+	border: 1px solid;
+	border-color: rgb(32, 140, 255)rgb(177, 17, 250) rgb(177, 17, 250) rgb(32, 140, 255);
+	color: #fff;
+	text-decoration: none;
+}
+
+/*_______*/
+.foto {
+	background-image: url(../img/b1.jpeg);
+	background-position: bottom;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.foto > figure {
+	display: none;
+}
+
+.habilidades {
+	background-image: url(../img/b1.jpeg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	color: #fff;
+
+}
+
+.habilidades h6 {
+	border-bottom: 4px solid rgba(0, 217, 255);
+	border-radius: 2px;
+}
+
+#habilidades {
+	width: 100%;
+	background: rgba(2, 6, 18, 0.4);
+}
+
+#html::after,
+#css::after,
+#js::after,
+#php::after,
+#mysql::after,
+#git::after {
+	color: #fff;
+}
+
+/*Definindo o nivél de cada habilidade*/
+#html {
+	width: 95%;
+}
+
+#html::after {
+	content: "90%";
+	margin-left: 89%;
+	margin-bottom: 5px;
+	padding: 1px;
+	border-radius: 4px;
+}
+
+#css {
+	width: 85%;
+}
+
+#css::after {
+	content: "80%";
+	margin-left: 88%;
+	padding: 1px;
+	border-radius: 4px;
+}
+
+#js {
+	width: 60%;
+}
+
+#js::after {
+	content: "52%";
+	margin-left: 73%;
+	padding: 1px;
+	border-radius: 4px;
+}
+
+#php {
+	width: 85%;
+}
+
+#php::after {
+	content: "76%";
+	margin-left: 88%;
+	padding: 1px;
+	border-radius: 4px;
+}
+
+#mysql {
+	width: 50%;
+}
+
+#mysql::after {
+	content: "40%";
+	margin-left: 75%;
+	padding: 1px;
+	border-radius: 4px;
+}
+
+#git {
+	width: 80%;
+}
+
+#git::after {
+	content: "70%";
+	margin-left: 88%;
+	padding: 1px;
+	border-radius: 4px;
+}
+
+/* FIM */
+
+.sobre {
+	color: rgb(114, 121, 139);
+}
+
+.sobre>div {
+	height: 100%;
+}
+
+.projetos{
+	height: unset;;
+	margin-bottom: 10px !important;
+}
+.projetos > div{
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	display: grid;
+	grid-template-columns: 48% 48%; 
+}
+.projetos div figure{
+	padding: 2px;
+	margin: 5px 5px;
+	text-align: center;
+    background: rgba(255, 255, 255, 0.7);
+}
+
+.projetos div figure img{
+	width: 100%;
+	height: 85%;
+}
+.projetos  a{
+	text-decoration: none;
+}
+.contato ul li {
+	color: rgb(114, 121, 139);
+	margin-top: 8px;
+}
+/*Rodape*/
+
+.rodape {
+	text-align: center;
+
+	color: rgb(114, 121, 139);
+	background: rgb(2, 6, 15);
+}
+
+.rodape>.redes ul li {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+
+	margin: 15px;
+}
+
+.rodape>.redes a {
+	width: inherit;
+	height: inherit;
+}
+
+.rodape>.redes img {
+	width: inherit;
+	height: inherit;
+
+	border-radius: 8px;
+}
+
+/*LARGE DVICES*/
+@media screen and (min-width: 992px) {
+	.menu {
+		display: unset;
+	}
+	.menu > nav{
+		padding: 10px;
+		text-align: right;
+		color: rgb(114, 121, 139);
+	}
+	.menu > nav ul li {
+		margin: 0 5px;
+		display: inline-block !important;
+		text-decoration: none;
+	}
+	.menu > nav ul li a{
+		color: inherit;
+		text-decoration: none;
+	}
+
+	.home {
+		margin-top: 230px !important;
+		margin-bottom: 30px;
+	}
+
+	.socias {
+		display: unset;
+	}
+
+	.socias img {
+		width: 40px;
+		height: 40px;
+	}
+
+	.socias>ul li {
+		margin: 10px 0;
+	}
+
+	#seccoes{
+		display: none;
+	}
+
+}
