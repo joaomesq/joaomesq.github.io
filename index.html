@@ -10,6 +10,8 @@
 
 	<link rel="stylesheet" href="./css/custom.css">
 
+	<!-- Google-icons -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
 	<!-- BOOTSTRAP -->
 	<link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
 </head>
@@ -76,31 +78,38 @@
 
 			<section class="projetos col-sm-12 col-lg-6 justify-content-between" id="projetos">
 				<h3>Projetos</h3>
-				<div>
-					<figure class="rounded">
-						<a href="./img/nossaterrapng.png" target="_blank">
-							<img src="./img/nossaterrapng.png" alt="Site de turismo" class="rounded">
-						    <figcaption><a href="#">Site de turismo</a></figcaption>
-						</a>
-					</figure>
-					<figure class="rounded">
-						<a href="./img/ipag.png" target="_blank">
-							<img src="./img/ipag.png" alt="Site de apresentação Ipag" class="rounded">
-						    <figcaption><a href="https://baptistamesquita.github.io/">Apresentação do Ipag</a></figcaption>
-						</a>
-					</figure>
-					<figure class="rounded">
-						<a href="./img/cefac1.png" target="_blank">
-						    <img src="./img/cefac1.png" alt="Portal escolar" class="rounded">
-						    <figcaption><a href="#">Portal Escolar</a></figcaption>
-					    </a>
-					</figure>
-					<figure class="rounded">
-						<a href="./img/loja.png" target="_blank">
-							<img src="./img/loja.png" alt="E-commerce" class="rounded">
-						    <figcaption><a href="#">E-commerce</a></figcaption>
-						</a>
-					</figure>
+				
+				<div class="trocar-slide">
+					<button id="recuar"><i class="material-symbols-outlined"> arrow_back_ios</i></button>
+					<button id="avancar"><i class="material-symbols-outlined"> arrow_forward_ios</i></button>
+				</div>
+				<div class="slide-show">
+					<ul class="lista-slide" id="lista-slide">
+						<li class="slide">
+							<figure class="rounded">
+								<img src="./img/ipag.png" alt="Site de apresentação do instituo médio Ipag" class="rounded">
+								<figcaption><a href="https://baptistamesquita.github.io">Site de apresentação do IPAG</a></figcaption>
+							</figure>
+						</li>
+						<li class="slide">
+							<figure class="rounded">
+								<img src="./img/cefac1.png" alt="Portal acadêmico" class="rounded">
+								<figcaption><a href="https://github.com/joaomesq/Portal_academico">Portal acadêmico</a></figcaption>
+							</figure>
+						</li>
+						<li class="slide">
+							<figure class="rounded">
+								<img src="./img/loja.png" alt="E-commerce BBASC" class="rounded">
+								<figcaption><a href="#">Loja elotrónica expermental</a></figcaption>
+							</figure>
+						</li>
+						<li class="slide">
+							<figure class="rounded">
+								<img src="./img/nossaterrapng.png" alt="Portal de turismo local" class="rounded">
+								<figcaption><a href="#">Portal local de turismo</a></figcaption>
+							</figure>
+						</li>
+					</ul>
 				</div>	
 			</section>
 
