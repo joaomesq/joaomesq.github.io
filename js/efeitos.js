@@ -8,6 +8,7 @@ function carregar(){
 	document.getElementById("link_contato").addEventListener("click", mostrar_seccoes);
 
 	trocar_slide();
+	let timer = setInterval(esconder_botao_de_troca, 5);
 }
 
 let ver_portfolio = document.getElementById("btn_portfolio");
@@ -22,6 +23,19 @@ let recuar = document.getElementById("recuar");
 let slide = document.getElementById("lista-slide");
 let item = 0;
 
+function esconder_botao_de_troca(){
+	if(item == 0 && item != 3){
+		recuar.style.display="none";
+		avancar.style.display="unset";
+	}else if (item == 3 && item != 0) {
+		recuar.style.display="unset";
+		avancar.style.display="none";
+	}
+	else{
+		recuar.style.display="unset";
+		avancar.style.display="unset";
+	}
+}
 function trocar_slide(){
 	let valor = -100;
     
@@ -31,10 +45,6 @@ function trocar_slide(){
     		let total = item * valor;
     		slide.style.left=total+"%";
     	}
-    	else if(item >= 3){
-    		avancar.style.display="none";
-    		recuar.style.display="unset";
-    	}
     })
 
     recuar.addEventListener("click", function (e){
@@ -42,10 +52,6 @@ function trocar_slide(){
     		item--;
     	    let total = item*valor;
     	    slide.style.left=total+"%";
-    	}
-    	else if(item < 1){
-    		recuar.style.display="none";
-    		avancar.style.display="unset";
     	}
     })
 }

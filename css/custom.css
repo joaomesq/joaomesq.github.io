@@ -231,12 +231,12 @@ h4 {
 /*Estilos slide*/
 
 .slide-show{
-	width: 90%;
+	width: 80%;
 	height: 100%;
 	
 	position: relative;
-	left: 5%;
-	right: 5%;
+	left: 10%;
+	right: 10%;
 
 	clear: both;
 	overflow: hidden;
@@ -259,20 +259,25 @@ h4 {
 	grid-auto-columns: 1fr;
 }
 .trocar-slide button{
-	width: 20px;
+	width: 40px;
+	height: 40px;
 	position: relative;
 	top: 250px;
 
 	cursor: pointer;
 	background: none;
-	border: none;
+	border: 1px solid #fff;
+	border-radius: 30%;
+	padding: 5px;
 	color: #fff;
 }
 .trocar-slide button:nth-child(1){
 	float: left;
+	left: 0;
 }
 .trocar-slide button:nth-child(2){
 	float: right;
+	right: 0;
 }
 /*-------------*/
 
