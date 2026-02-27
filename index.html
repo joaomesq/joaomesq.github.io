@@ -1,160 +1,618 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
+
 <head>
 	<meta charset="utf-8">
-	<meta name="name" content="João Mesquita">
-	<meta name="description" content="Portólio de João Mesquita, desenvolvedor web procurando experiência">
-	<meta name="keywords" content="João-Mesquita, Desenvolvedor-Web, Desenvolvedor, Conhecimento"> 
+	<meta name="name" content="João Mesquita - Engenheiro de Software">
+	<meta name="description"
+		content="Portfólio profissional de João Mesquita, Engenheiro de Software especializado em desenvolvimento web, Docker e arquitetura de sistemas">
+	<meta name="keywords"
+		content="João Mesquita, Engenheiro de Software, Desenvolvedor Web, Docker, Laravel, Python, Software Engineer">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-	<title>João Mesquita | Portfólio</title>
+	<meta name="theme-color" content="#1a1a2e">
+	<title>João Mesquita | Engenheiro de Software</title>
 
 	<link rel="stylesheet" href="./css/custom.css">
-
 	<!-- Google-icons -->
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
-	<!-- BOOTSTRAP -->
+	<link rel="stylesheet"
+		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+	<!-- BOOTSTRAP 5 -->
 	<link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
 </head>
-<body>
-	<header class="cabecalho col-12 fixed-top">
-		<div class="row justify-content-around">
-		<div class="nome col-sm-12 col-lg-4 p-3">
-			<h3><\> Mesquita</h3>
-		</div>
 
-		<div class="menu col-lg-6 p-3">
-			<nav>
-				<ul>
-					 <li><a href="index.html">Home</a></li>
-					 <li><a href="#sobre" id="link_sobre">Sobre</a></li>
-					 <li><a href="#projetos" id="link_projetos">Projetos</a></li>
-					 <li><a href="#habilidades" id="link_habilidades">Habilidades</a></li>
-					 <li><a href="#contato" id="link_contato">Contato</a></li>
-				</ul>
-		   </nav>
-		</div>
-	</div>
+<body data-bs-spy="scroll" data-bs-target="navbar" data-bs-offset="70">
+
+	<!-- HEADER/NAVBAR -->
+	<header>
+		<nav class="navbar navbar-dark navbar-expand-lg fixed-top"
+			style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);">
+			<div class="container-fluid">
+				<a class="navbar-brand fw-bold" href="index.html">
+					<span class="text-primary">&lt;/&gt;</span> Mesquita
+				</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+					aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav ms-auto gap-3">
+						<li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+						<li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+						<li class="nav-item"><a class="nav-link" href="#projetos">Projetos</a></li>
+						<li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
+						<li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
 	</header>
 
-	<main class="container-fluid">
-		<article class="home row">
-			<section class="socias col-sm-12 col-lg-1 p-2">
-				<ul>
-                    <li><a href="https://github.com/joaomesq" target="_balank"><img src="./img/redes/githubcinza.png" alt="Link Github"></a></li>
-                    <li><a href="#" target="_balank"><img src="./img/redes/linkedincinza.png" alt="Link Linkedin"></a></li>
-                    <li><a href="https://web.facebook.com/joaobaptistaeuclides.joao" target="_balank"><img src="./img/redes/facebookcinza.png" alt="Link facebook"></a></li>
-                    <li id="linha"></li>
-               </ul>
-			</section>
-
-			<section class="apresentacao col-sm-12 col-lg-5 p-2">
-				<p>Olá, meu nome é</p>
-               
-               <h1>João Mesquita</h1>
-
-               <h4>Desenvolvedor Web</h4>
-               <a href="#sobre" id="btn_portfolio">Conheça meu portfólio</a>
-			</section>
-
-			<section class="foto col-sm-12 col-lg-6 p-2 rounded">
-				<figure>
-					<img src="./img/p1.jpg">
-				</figure>
-			</section>
-		</article>
-
-		<article class="seccoes row" id="seccoes">
-			<section class="sobre col-sm-12 col-lg-6 p-2" id="sobre">
-						<h3>Sobre mim</h3>
-						<p>
-							Olá, meu nome é João Mesquita e sou desenvolvedor web. 
-							A programação é mnha paixão, meu trabalho e meu hobby. 
-							Meus pontos fortes se moldam com HTML, CSS, JavaScript no Fornt-End e PHP e Mysql no Back-End. 
-							Me dedico e estudo diariamente com muito foco e empenho para entender mais das tecnologias e fortalecer minhas bases. 
-							Estou em constante aprendizado e em busca de oportunidades para adquirir experiência e aprimorar meus conhecimentos 
-							criando projetos pessoais sendo mentorado por amigos desenvolvedores.
-						 </p>
-			</section>
-
-			<section class="projetos col-sm-12 col-lg-6 justify-content-between" id="projetos">
-				<h3>Projetos</h3>
-				
-				<div class="trocar-slide">
-					<button id="recuar"><i class="material-symbols-outlined"> arrow_back_ios</i></button>
-					<button id="avancar"><i class="material-symbols-outlined"> arrow_forward_ios</i></button>
+	<!-- MAIN CONTENT -->
+	<main>
+		<!-- HERO SECTION -->
+		<section class="hero-section min-vh-100 d-flex align-items-center" id="home"
+			style="background: linear-gradient(135deg, #0f3460 0%, #16213e 50%, #1a1a2e 100%);">
+			<div class="container">
+				<div class="row align-items-center g-5">
+					<div class="col-lg-6 col-md-12 text-white order-2 order-lg-1">
+						<div class="hero-content">
+							<p class="text-primary fs-5 fw-500 mb-3">Bem-vindo ao meu portfólio</p>
+							<h1 class="display-4 fw-bold mb-4">
+								João <span class="text-primary">Mesquita</span>
+							</h1>
+							<h2 class="h3 text-light mb-4">Engenheiro de Software</h2>
+							<p class="lead mb-4 text-secondary">
+								Desenvolvedor web full-stack com expertise em arquitetura de sistemas, containerização
+								com Docker e desenvolvimento backend escalável. Apaixonado por criar soluções
+								tecnológicas inovadoras.
+							</p>
+							<div class="d-flex gap-3 flex-wrap">
+								<a href="#sobre" class="btn btn-primary btn-lg px-5">Conheça meu trabalho</a>
+								<a href="#contato" class="btn btn-outline-primary btn-lg px-5">Entre em contato</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-12 order-1 order-lg-2 text-center">
+						<figure class="mb-0">
+							<img src="./img/p1.jpg" alt="João Mesquita" class="img-fluid rounded-circle shadow-lg"
+								style="max-width: 400px; border: 3px solid #0f7ba7;">
+						</figure>
+					</div>
 				</div>
-				<div class="slide-show">
-					<ul class="lista-slide" id="lista-slide">
-						<li class="slide">
-							<figure class="rounded">
-								<img src="./img/ipag.png" alt="Site de apresentação do instituo médio Ipag" class="rounded">
-								<figcaption><a href="https://baptistamesquita.github.io">Site de apresentação do IPAG</a></figcaption>
-							</figure>
-						</li>
-						<li class="slide">
-							<figure class="rounded">
-								<img src="./img/cefac1.png" alt="Portal acadêmico" class="rounded">
-								<figcaption><a href="https://github.com/joaomesq/Portal_academico">Portal acadêmico</a></figcaption>
-							</figure>
-						</li>
-						<li class="slide">
-							<figure class="rounded">
-								<img src="./img/hbs2.jpeg" alt="Site HBS" class="rounded">
-								<figcaption><a href="https://chanaxtec.github.io">Site de apresantação de academia de cursos profissionais</a></figcaption>
-							</figure>
-						</li>
-						<li class="slide">
-							<figure class="rounded">
-								<img src="./img/nossaterrapng.png" alt="Portal de turismo local" class="rounded">
-								<figcaption><a href="#">Portal local de turismo</a></figcaption>
-							</figure>
-						</li>
-					</ul>
-				</div>	
-			</section>
 
-			<section class="habilidades col-sm-12 col-lg-6 p-2 rounded">
-				<div id="habilidades">
-				<h3>Habildades</h3>
-				<br>
-                <h6 id="html">HTML</h6>
-                <h6 id="css">CSS</h6>
-                <h6 id="js">JavaScript</h6>
-                <h6 id="php">PHP</h6>
-                <h6 id="mysql">MySql</h6>
-                <h6 id="git">Git</h6>
+				<!-- Social Links Hero -->
+				<div class="row mt-5">
+					<div class="col-12">
+						<div class="d-flex justify-content-center gap-4 flex-wrap">
+							<a href="https://github.com/joaomesq" target="_blank" rel="noopener noreferrer"
+								class="social-link text-white" title="GitHub">
+								<img src="./img/redes/githubwhite.png" alt="GitHub" width="32">
+							</a>
+							<a href="#" target="_blank" rel="noopener noreferrer" class="social-link text-white"
+								title="LinkedIn">
+								<img src="./img/redes/linkedincinza.png" alt="LinkedIn" width="32">
+							</a>
+							<a href="https://web.facebook.com/joaobaptistaeuclides.joao" target="_blank"
+								rel="noopener noreferrer" class="social-link text-white" title="Facebook">
+								<img src="./img/redes/facebookwhite.png" alt="Facebook" width="32">
+							</a>
+							<a href="https://wa.me/244923943421" target="_blank" rel="noopener noreferrer"
+								class="social-link text-white" title="WhatsApp">
+								<img src="./img/redes/whatsappwhite.png" alt="WhatsApp" width="32">
+							</a>
+						</div>
+					</div>
+				</div>
 			</div>
-			</section>
+		</section>
 
-			<section class="contato col-sm-12 col-lg-6 p-2" id="contato">
-				    <h3>Contato</h3>
-                    <ul>
-                         <li>Email: joaobmesquita1@gmail.com</li>
-                         <li>Telefone: +244 923 943 421</li>
-                         <li>Localização: ANGOLA - HUAMBO</li>
-                    </ul>
-			</section>
-		</article>
+		<!-- ABOUT SECTION -->
+		<section id="sobre" class="py-5 bg-light">
+			<div class="container">
+				<h2 class="display-5 fw-bold mb-5 text-center">
+					Sobre <span class="text-primary">mim</span>
+				</h2>
+				<div class="row g-5 align-items-center">
+					<div class="col-lg-6">
+						<p class="fs-5 mb-4">
+							Olá! Sou <strong>João Mesquita</strong>, Engenheiro de Software com paixão por criar
+							soluções tecnológicas robustas e escaláveis. Minha trajetória combina desenvolvimento web
+							full-stack com engenharia de software moderna.
+						</p>
+						<p class="fs-5 mb-4">
+							Possuo expertise em <strong>arquitetura de sistemas</strong>, <strong>containerização com
+								Docker</strong>, desenvolvimento backend com <strong>Laravel e Python</strong>, além de
+							habilidades sólidas em frontend com HTML, CSS e JavaScript.
+						</p>
+						<p class="fs-5 mb-4">
+							Sou um profissional dedicado, em <strong>constante aprendizado</strong>, focado em best
+							practices de desenvolvimento, clean code e padrões de design. Busco oportunidades para
+							expandir experiência em projetos desafiadores.
+						</p>
+						<div class="d-flex gap-3 flex-wrap">
+							<div class="stat-box">
+								<h4 class="text-primary">+5</h4>
+								<p class="text-muted">Projetos Concluídos</p>
+							</div>
+							<div class="stat-box">
+								<h4 class="text-primary">HTML, CSS, JS</h4>
+								<p class="text-muted">Frontend</p>
+							</div>
+							<div class="stat-box">
+								<h4 class="text-primary">Docker</h4>
+								<p class="text-muted">DevOps</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="card border-0 shadow-lg p-5"
+							style="background: linear-gradient(135deg, #0f7ba7 0%, #0f3460 100%);">
+							<div class="card-body text-white">
+								<h5 class="card-title mb-4">Minha Missão</h5>
+								<p class="mb-4">
+									Desenvolver software de alta qualidade que soluciona problemas reais e agrega valor
+									aos usuários finais, enquanto mantenho rigor técnico e excelência em arquitetura.
+								</p>
+								<h5 class="card-title mb-4">Mindset</h5>
+								<ul class="list-unstyled">
+									<li class="mb-2">✓ Aprendizado contínuo e adaptabilidade</li>
+									<li class="mb-2">✓ Clean code e padrões de design</li>
+									<li class="mb-2">✓ Escalabilidade e performance</li>
+									<li class="mb-2">✓ Colaboração e comunicação</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- PROJECTS SECTION -->
+		<section id="projetos" class="py-5">
+			<div class="container">
+				<h2 class="display-5 fw-bold mb-5 text-center">
+					Meus <span class="text-primary">Projetos</span>
+				</h2>
+
+				<div class="row g-4">
+					<!-- Project 1 -->
+					<div class="col-lg-6 col-md-12">
+						<div class="card project-card h-100 border-0 shadow-lg overflow-hidden">
+							<img src="./img/ipag.png" class="card-img-top" alt="Site IPAG"
+								style="height: 250px; object-fit: cover;">
+							<div class="card-body">
+								<h5 class="card-title fw-bold mb-3">Site de Apresentação IPAG</h5>
+								<p class="card-text text-muted mb-3">
+									Site responsivo de apresentação para instituto médio, desenvolvido com HTML5, CSS3 e
+									JavaScript moderno.
+								</p>
+								<div class="tech-badges mb-3">
+									<span class="badge bg-primary">HTML5</span>
+									<span class="badge bg-primary">CSS3</span>
+									<span class="badge bg-primary">JavaScript</span>
+									<span class="badge bg-primary">Responsive</span>
+								</div>
+								<a href="https://baptistamesquita.github.io" target="_blank"
+									class="btn btn-outline-primary btn-sm">
+									Ver Projeto <i class="material-symbols-outlined ms-2"
+										style="font-size: 18px;">arrow_forward</i>
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<!-- Project 2 -->
+					<div class="col-lg-6 col-md-12">
+						<div class="card project-card h-100 border-0 shadow-lg overflow-hidden">
+							<img src="./img/cefac1.png" class="card-img-top" alt="Portal Acadêmico"
+								style="height: 250px; object-fit: cover;">
+							<div class="card-body">
+								<h5 class="card-title fw-bold mb-3">Portal Acadêmico</h5>
+								<p class="card-text text-muted mb-3">
+									Sistema completo de gerenciamento acadêmico com backend robusto em PHP/MySQL e
+									frontend interativo.
+								</p>
+								<div class="tech-badges mb-3">
+									<span class="badge bg-danger">PHP</span>
+									<span class="badge bg-danger">MySQL</span>
+									<span class="badge bg-danger">Bootstrap</span>
+									<span class="badge bg-danger">AJAX</span>
+								</div>
+								<a href="https://github.com/joaomesq/Portal_academico" target="_blank"
+									class="btn btn-outline-primary btn-sm">
+									Ver no GitHub <i class="material-symbols-outlined ms-2"
+										style="font-size: 18px;">arrow_forward</i>
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<!-- Project 3 -->
+					<div class="col-lg-6 col-md-12">
+						<div class="card project-card h-100 border-0 shadow-lg overflow-hidden">
+							<img src="./img/hbs2.jpeg" class="card-img-top" alt="Site HBS"
+								style="height: 250px; object-fit: cover;">
+							<div class="card-body">
+								<h5 class="card-title fw-bold mb-3">Academia de Cursos Profissionais</h5>
+								<p class="card-text text-muted mb-3">
+									Website moderno e responsivo para instituição de ensino profissional, com design
+									UX/UI otimizado.
+								</p>
+								<div class="tech-badges mb-3">
+									<span class="badge bg-success">HTML5</span>
+									<span class="badge bg-success">CSS3</span>
+									<span class="badge bg-success">JavaScript</span>
+									<span class="badge bg-success">Mobile-First</span>
+								</div>
+								<a href="https://chanaxtec.github.io" target="_blank"
+									class="btn btn-outline-primary btn-sm">
+									Ver Projeto <i class="material-symbols-outlined ms-2"
+										style="font-size: 18px;">arrow_forward</i>
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<!-- Project 4 -->
+					<div class="col-lg-6 col-md-12">
+						<div class="card project-card h-100 border-0 shadow-lg overflow-hidden">
+							<img src="./img/nossaterrapng.png" class="card-img-top" alt="Portal Turismo"
+								style="height: 250px; object-fit: cover;">
+							<div class="card-body">
+								<h5 class="card-title fw-bold mb-3">Portal de Turismo Local</h5>
+								<p class="card-text text-muted mb-3">
+									Plataforma interativa para descobrir atrações turísticas locais com mapa integrado e
+									informações detalhadas.
+								</p>
+								<div class="tech-badges mb-3">
+									<span class="badge bg-info">HTML5</span>
+									<span class="badge bg-info">CSS3</span>
+									<span class="badge bg-info">JavaScript</span>
+									<span class="badge bg-info">Maps API</span>
+								</div>
+								<a href="#" class="btn btn-outline-primary btn-sm">
+									Em desenvolvimento <i class="material-symbols-outlined ms-2"
+										style="font-size: 18px;">schedule</i>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- SKILLS SECTION -->
+		<section id="habilidades" class="py-5 bg-light">
+			<div class="container">
+				<h2 class="display-5 fw-bold mb-5 text-center">
+					Habilidades <span class="text-primary">Técnicas</span>
+				</h2>
+
+				<div class="row g-4">
+					<!-- Frontend -->
+					<div class="col-lg-6">
+						<div class="skill-category">
+							<h4 class="mb-4">
+								<i class="material-symbols-outlined text-primary me-2">language</i>
+								Frontend Development
+							</h4>
+							<div class="skill-item mb-3">
+								<div class="d-flex justify-content-between mb-2">
+									<span class="fw-bold">HTML5</span>
+									<span class="badge bg-primary">90%</span>
+								</div>
+								<div class="progress" role="progressbar" aria-valuenow="90" aria-valuemin="0"
+									aria-valuemax="100">
+									<div class="progress-bar" style="width: 90%"></div>
+								</div>
+							</div>
+							<div class="skill-item mb-3">
+								<div class="d-flex justify-content-between mb-2">
+									<span class="fw-bold">CSS3 / SCSS</span>
+									<span class="badge bg-primary">85%</span>
+								</div>
+								<div class="progress" role="progressbar" aria-valuenow="85" aria-valuemin="0"
+									aria-valuemax="100">
+									<div class="progress-bar" style="width: 85%"></div>
+								</div>
+							</div>
+							<div class="skill-item mb-3">
+								<div class="d-flex justify-content-between mb-2">
+									<span class="fw-bold">JavaScript</span>
+									<span class="badge bg-primary">80%</span>
+								</div>
+								<div class="progress" role="progressbar" aria-valuenow="80" aria-valuemin="0"
+									aria-valuemax="100">
+									<div class="progress-bar" style="width: 80%"></div>
+								</div>
+							</div>
+							<div class="skill-item mb-3">
+								<div class="d-flex justify-content-between mb-2">
+									<span class="fw-bold">Bootstrap / Responsive Design</span>
+									<span class="badge bg-primary">85%</span>
+								</div>
+								<div class="progress" role="progressbar" aria-valuenow="85" aria-valuemin="0"
+									aria-valuemax="100">
+									<div class="progress-bar" style="width: 85%"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Backend -->
+					<div class="col-lg-6">
+						<div class="skill-category">
+							<h4 class="mb-4">
+								<i class="material-symbols-outlined text-primary me-2">dns</i>
+								Backend Development
+							</h4>
+							<div class="skill-item mb-3">
+								<div class="d-flex justify-content-between mb-2">
+									<span class="fw-bold">PHP / Laravel</span>
+									<span class="badge bg-danger">80%</span>
+								</div>
+								<div class="progress" role="progressbar" aria-valuenow="80" aria-valuemin="0"
+									aria-valuemax="100">
+									<div class="progress-bar bg-danger" style="width: 80%"></div>
+								</div>
+							</div>
+							<div class="skill-item mb-3">
+								<div class="d-flex justify-content-between mb-2">
+									<span class="fw-bold">Python</span>
+									<span class="badge bg-danger">75%</span>
+								</div>
+								<div class="progress" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+									aria-valuemax="100">
+									<div class="progress-bar bg-danger" style="width: 75%"></div>
+								</div>
+							</div>
+							<div class="skill-item mb-3">
+								<div class="d-flex justify-content-between mb-2">
+									<span class="fw-bold">MySQL / Databases</span>
+									<span class="badge bg-danger">85%</span>
+								</div>
+								<div class="progress" role="progressbar" aria-valuenow="85" aria-valuemin="0"
+									aria-valuemax="100">
+									<div class="progress-bar bg-danger" style="width: 85%"></div>
+								</div>
+							</div>
+							<div class="skill-item mb-3">
+								<div class="d-flex justify-content-between mb-2">
+									<span class="fw-bold">REST APIs</span>
+									<span class="badge bg-danger">80%</span>
+								</div>
+								<div class="progress" role="progressbar" aria-valuenow="80" aria-valuemin="0"
+									aria-valuemax="100">
+									<div class="progress-bar bg-danger" style="width: 80%"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- DevOps & Tools -->
+					<div class="col-lg-6">
+						<div class="skill-category">
+							<h4 class="mb-4">
+								<i class="material-symbols-outlined text-primary me-2">settings</i>
+								DevOps & Tools
+							</h4>
+							<div class="skill-item mb-3">
+								<div class="d-flex justify-content-between mb-2">
+									<span class="fw-bold">Docker</span>
+									<span class="badge bg-info">80%</span>
+								</div>
+								<div class="progress" role="progressbar" aria-valuenow="80" aria-valuemin="0"
+									aria-valuemax="100">
+									<div class="progress-bar bg-info" style="width: 80%"></div>
+								</div>
+							</div>
+							<div class="skill-item mb-3">
+								<div class="d-flex justify-content-between mb-2">
+									<span class="fw-bold">Git / GitHub</span>
+									<span class="badge bg-info">85%</span>
+								</div>
+								<div class="progress" role="progressbar" aria-valuenow="85" aria-valuemin="0"
+									aria-valuemax="100">
+									<div class="progress-bar bg-info" style="width: 85%"></div>
+								</div>
+							</div>
+							<div class="skill-item mb-3">
+								<div class="d-flex justify-content-between mb-2">
+									<span class="fw-bold">Linux / Command Line</span>
+									<span class="badge bg-info">75%</span>
+								</div>
+								<div class="progress" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+									aria-valuemax="100">
+									<div class="progress-bar bg-info" style="width: 75%"></div>
+								</div>
+							</div>
+							<div class="skill-item mb-3">
+								<div class="d-flex justify-content-between mb-2">
+									<span class="fw-bold">Agile / Scrum</span>
+									<span class="badge bg-info">70%</span>
+								</div>
+								<div class="progress" role="progressbar" aria-valuenow="70" aria-valuemin="0"
+									aria-valuemax="100">
+									<div class="progress-bar bg-info" style="width: 70%"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Soft Skills -->
+					<div class="col-lg-6">
+						<div class="skill-category">
+							<h4 class="mb-4">
+								<i class="material-symbols-outlined text-primary me-2">group</i>
+								Soft Skills
+							</h4>
+							<div class="skill-item mb-3">
+								<div class="d-flex justify-content-between mb-2">
+									<span class="fw-bold">Comunicação</span>
+									<span class="badge bg-warning">85%</span>
+								</div>
+								<div class="progress" role="progressbar" aria-valuenow="85" aria-valuemin="0"
+									aria-valuemax="100">
+									<div class="progress-bar bg-warning" style="width: 85%"></div>
+								</div>
+							</div>
+							<div class="skill-item mb-3">
+								<div class="d-flex justify-content-between mb-2">
+									<span class="fw-bold">Trabalho em Equipe</span>
+									<span class="badge bg-warning">90%</span>
+								</div>
+								<div class="progress" role="progressbar" aria-valuenow="90" aria-valuemin="0"
+									aria-valuemax="100">
+									<div class="progress-bar bg-warning" style="width: 90%"></div>
+								</div>
+							</div>
+							<div class="skill-item mb-3">
+								<div class="d-flex justify-content-between mb-2">
+									<span class="fw-bold">Problem Solving</span>
+									<span class="badge bg-warning">85%</span>
+								</div>
+								<div class="progress" role="progressbar" aria-valuenow="85" aria-valuemin="0"
+									aria-valuemax="100">
+									<div class="progress-bar bg-warning" style="width: 85%"></div>
+								</div>
+							</div>
+							<div class="skill-item mb-3">
+								<div class="d-flex justify-content-between mb-2">
+									<span class="fw-bold">Aprendizado Contínuo</span>
+									<span class="badge bg-warning">95%</span>
+								</div>
+								<div class="progress" role="progressbar" aria-valuenow="95" aria-valuemin="0"
+									aria-valuemax="100">
+									<div class="progress-bar bg-warning" style="width: 95%"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- CONTACT SECTION -->
+		<section id="contato" class="py-5" style="background: linear-gradient(135deg, #0f3460 0%, #16213e 100%);">
+			<div class="container">
+				<h2 class="display-5 fw-bold mb-5 text-center text-white">
+					Vamos <span class="text-primary">Conversar</span>
+				</h2>
+
+				<div class="row g-4 mb-5">
+					<div class="col-md-6 col-lg-3">
+						<div class="contact-card text-center text-white p-4 rounded-3"
+							style="background: rgba(15, 123, 167, 0.1); border: 1px solid #0f7ba7;">
+							<i class="material-symbols-outlined d-block mb-3 text-primary"
+								style="font-size: 40px;">mail</i>
+							<h5 class="mb-2">Email</h5>
+							<p class="mb-0">
+								<a href="mailto:joaobmesquita1@gmail.com" class="text-primary text-decoration-none">
+									joaobmesquita1@gmail.com
+								</a>
+							</p>
+						</div>
+					</div>
+
+					<div class="col-md-6 col-lg-3">
+						<div class="contact-card text-center text-white p-4 rounded-3"
+							style="background: rgba(15, 123, 167, 0.1); border: 1px solid #0f7ba7;">
+							<i class="material-symbols-outlined d-block mb-3 text-primary"
+								style="font-size: 40px;">phone</i>
+							<h5 class="mb-2">Telefone</h5>
+							<p class="mb-0">
+								<a href="tel:+244923943421" class="text-primary text-decoration-none">
+									+244 923 943 421
+								</a>
+							</p>
+						</div>
+					</div>
+
+					<div class="col-md-6 col-lg-3">
+						<div class="contact-card text-center text-white p-4 rounded-3"
+							style="background: rgba(15, 123, 167, 0.1); border: 1px solid #0f7ba7;">
+							<i class="material-symbols-outlined d-block mb-3 text-primary"
+								style="font-size: 40px;">location_on</i>
+							<h5 class="mb-2">Localização</h5>
+							<p class="mb-0 text-primary">
+								Angola - Huambo
+							</p>
+						</div>
+					</div>
+
+					<div class="col-md-6 col-lg-3">
+						<div class="contact-card text-center text-white p-4 rounded-3"
+							style="background: rgba(15, 123, 167, 0.1); border: 1px solid #0f7ba7;">
+							<i class="material-symbols-outlined d-block mb-3 text-primary"
+								style="font-size: 40px;">schedule</i>
+							<h5 class="mb-2">Disponibilidade</h5>
+							<p class="mb-0 text-primary">
+								Aberto a oportunidades
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<!-- Social Links -->
+				<div class="text-center">
+					<h4 class="text-white mb-4">Conecte-se comigo</h4>
+					<div class="d-flex justify-content-center gap-4 flex-wrap">
+						<a href="https://github.com/joaomesq" target="_blank" rel="noopener noreferrer"
+							class="social-button" title="GitHub">
+							<img src="./img/redes/githubwhite.png" alt="GitHub" width="40">
+						</a>
+						<a href="https://web.facebook.com/joaobaptistaeuclides.joao" target="_blank"
+							rel="noopener noreferrer" class="social-button" title="Facebook">
+							<img src="./img/redes/facebookwhite.png" alt="Facebook" width="40">
+						</a>
+						<a href="https://t.me/joaomesqui" target="_blank" rel="noopener noreferrer"
+							class="social-button" title="Telegram">
+							<img src="./img/redes/telegramwhite.png" alt="Telegram" width="40">
+						</a>
+						<a href="https://wa.me/244923943421" target="_blank" rel="noopener noreferrer"
+							class="social-button" title="WhatsApp">
+							<img src="./img/redes/whatsappwhite.png" alt="WhatsApp" width="40">
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
 	</main>
 
-	<footer class="rodape">
-		<div class="redes">
-			<ul>
-				 <li><a href="https://web.facebook.com/joaobaptistaeuclides.joao" target="_balank"><img src="./img/redes/facebookwhite.png" alt="imagem de link para o facebook"></a></li>
-				 <li><a href="https://t.me/joaomesqui" target="_balank"><img src="./img/redes/telegramwhite.png" alt="imagem de link para o telegram"></a></li>
-				 <li><a href="https://wa.me/244923943421" target="_balank"><img src="./img/redes/whatsappwhite.png" alt="imagem de link para o WatsApp"></a></li>
-				 <li><a href="https://github.com/joaomesq" target="_balank"><img src="./img/redes/githubwhite.png" alt="imagem de link para o github"></a></li>
-			</ul>
-	   </div>
+	<!-- FOOTER -->
+	<footer class="bg-dark text-white py-5 border-top border-primary border-3">
+		<div class="container">
+			<div class="row g-4 mb-4">
+				<div class="col-md-6">
+					<h5 class="mb-3">João Mesquita</h5>
+					<p class="text-muted">
+						Engenheiro de Software comprometido com excelência técnica e inovação. Desenvolvendo soluções
+						que fazem a diferença.
+					</p>
+				</div>
+				<div class="col-md-6">
+					<h5 class="mb-3">Links Rápidos</h5>
+					<ul class="list-unstyled">
+						<li><a href="#home" class="text-muted text-decoration-none">Home</a></li>
+						<li><a href="#sobre" class="text-muted text-decoration-none">Sobre</a></li>
+						<li><a href="#projetos" class="text-muted text-decoration-none">Projetos</a></li>
+						<li><a href="#contato" class="text-muted text-decoration-none">Contato</a></li>
+					</ul>
+				</div>
+			</div>
 
-	   <div class="direitos">
-			<p>"Chanax: Desenvolvendo ideias, criando soluções"</p>
-			<p>&copy; 2023 - Todos os direitos reservados a Chanax Tecnolog.</p>
-	   </div>
+			<hr class="border-secondary">
+
+			<div class="text-center">
+				<p class="text-muted mb-2">"Desenvolvendo ideias, criando soluções"</p>
+				<p class="text-muted">© 2026 João Mesquita. Todos os direitos reservados.</p>
+			</div>
+		</div>
 	</footer>
-     
+
+	<!-- Scripts -->
 	<script src="./js/efeitos.js"></script>
-     <!-- BOOTSTRAP -->
-     <script src="./bootstrap/js/bootstrap.min.js"></script>
+	<script src="./bootstrap/js/bootstrap.min.js"></script>
 </body>
+
 </html>
