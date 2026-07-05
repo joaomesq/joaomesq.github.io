@@ -18,6 +18,130 @@
 		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
 	<!-- BOOTSTRAP 5 -->
 	<link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+
+	<style>
+		/* ===== Project cards: modernized, fully clickable ===== */
+		.project-link {
+			display: block;
+			text-decoration: none;
+			color: inherit;
+			height: 100%;
+		}
+
+		.project-card {
+			position: relative;
+			transition: transform .35s ease, box-shadow .35s ease;
+			border-radius: 16px;
+			isolation: isolate;
+		}
+
+		.project-card::after {
+			content: "";
+			position: absolute;
+			inset: 0;
+			border-radius: 16px;
+			padding: 1.5px;
+			background: linear-gradient(135deg, #0f7ba7, transparent 40%, transparent 60%, #0f7ba7);
+			-webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+			-webkit-mask-composite: xor;
+			mask-composite: exclude;
+			opacity: 0;
+			transition: opacity .35s ease;
+			pointer-events: none;
+			z-index: 2;
+		}
+
+		.project-link:hover .project-card,
+		.project-link:focus-visible .project-card {
+			transform: translateY(-8px);
+			box-shadow: 0 20px 40px -12px rgba(15, 123, 167, 0.35) !important;
+		}
+
+		.project-link:hover .project-card::after,
+		.project-link:focus-visible .project-card::after {
+			opacity: 1;
+		}
+
+		.project-link:focus-visible {
+			outline: 2px solid #0f7ba7;
+			outline-offset: 4px;
+			border-radius: 16px;
+		}
+
+		.project-card .img-wrap {
+			overflow: hidden;
+			height: 250px;
+		}
+
+		.project-card .img-wrap img {
+			height: 100%;
+			width: 100%;
+			object-fit: cover;
+			transition: transform .5s ease;
+		}
+
+		.project-link:hover .img-wrap img,
+		.project-link:focus-visible .img-wrap img {
+			transform: scale(1.08);
+		}
+
+		.project-status-badge {
+			position: absolute;
+			top: 14px;
+			right: 14px;
+			z-index: 3;
+			font-size: 0.72rem;
+			letter-spacing: .03em;
+			padding: 6px 12px;
+			border-radius: 999px;
+			backdrop-filter: blur(6px);
+		}
+
+		.cta-row {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			font-weight: 600;
+			color: #0f7ba7;
+			margin-top: 1rem;
+			padding-top: 1rem;
+			border-top: 1px solid rgba(15, 123, 167, 0.15);
+		}
+
+		.cta-row .cta-icon {
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
+			width: 34px;
+			height: 34px;
+			border-radius: 50%;
+			background: rgba(15, 123, 167, 0.12);
+			transition: transform .3s ease, background .3s ease;
+		}
+
+		.project-link:hover .cta-icon,
+		.project-link:focus-visible .cta-icon {
+			transform: translateX(4px);
+			background: #0f7ba7;
+			color: #fff;
+		}
+
+		.project-card.is-disabled {
+			cursor: default;
+		}
+
+		.project-card.is-disabled .img-wrap img {
+			filter: grayscale(35%);
+		}
+
+		.project-card.is-disabled .cta-row {
+			color: #6c757d;
+		}
+
+		.project-card.is-disabled .cta-icon {
+			background: rgba(108, 117, 125, 0.15);
+		}
+	</style>
 </head>
 
 <body data-bs-spy="scroll" data-bs-target="navbar" data-bs-offset="70">
@@ -170,103 +294,128 @@
 				<div class="row g-4">
 					<!-- Project 1 -->
 					<div class="col-lg-6 col-md-12">
-						<div class="card project-card h-100 border-0 shadow-lg overflow-hidden">
-							<img src="./img/ipag.png" class="card-img-top" alt="Site IPAG"
-								style="height: 250px; object-fit: cover;">
-							<div class="card-body">
-								<h5 class="card-title fw-bold mb-3">Site de Apresentação IPAG</h5>
-								<p class="card-text text-muted mb-3">
-									Site responsivo de apresentação para instituto médio, desenvolvido com HTML5, CSS3 e
-									JavaScript moderno.
-								</p>
-								<div class="tech-badges mb-3">
-									<span class="badge bg-primary">HTML5</span>
-									<span class="badge bg-primary">CSS3</span>
-									<span class="badge bg-primary">JavaScript</span>
-									<span class="badge bg-primary">Responsive</span>
+						<a href="https://cash-flow-dek5.onrender.com" target="_blank" rel="noopener noreferrer"
+							class="project-link" aria-label="Ver projeto Cash Flow">
+							<div class="card project-card h-100 border-0 shadow-lg overflow-hidden">
+								<span class="badge bg-success project-status-badge">Live</span>
+								<div class="img-wrap">
+									<img src="./img/cash-flow-3.png" alt="Site IPAG">
 								</div>
-								<a href="https://baptistamesquita.github.io" target="_blank"
-									class="btn btn-outline-primary btn-sm">
-									Ver Projeto <i class="material-symbols-outlined ms-2"
-										style="font-size: 18px;">arrow_forward</i>
-								</a>
+								<div class="card-body">
+									<h5 class="card-title fw-bold mb-3">Cash Flow</h5>
+									<p class="card-text text-muted mb-3">
+										Sistema de controle financeiro e gestão de fluxo de caixa, desenvolvido para
+										oferecer uma visão clara e organizada das entradas e saídas financeiras.
+									</p>
+									<div class="tech-badges mb-3">
+										<span class="badge bg-primary">LARAVEL 12</span>
+										<span class="badge bg-primary">TailwindCSS</span>
+										<span class="badge bg-primary">Livewire</span>
+										<span class="badge bg-primary">MySQL, PostgreSQL</span>
+										<span class="badge bg-primary">Docker, Docker Compose</span>
+									</div>
+									<div class="cta-row">
+										<span>Ver Projeto</span>
+										<span class="cta-icon">
+											<i class="material-symbols-outlined" style="font-size: 18px;">arrow_forward</i>
+										</span>
+									</div>
+								</div>
 							</div>
-						</div>
+						</a>
 					</div>
 
 					<!-- Project 2 -->
 					<div class="col-lg-6 col-md-12">
-						<div class="card project-card h-100 border-0 shadow-lg overflow-hidden">
-							<img src="./img/cefac1.png" class="card-img-top" alt="Portal Acadêmico"
-								style="height: 250px; object-fit: cover;">
-							<div class="card-body">
-								<h5 class="card-title fw-bold mb-3">Portal Acadêmico</h5>
-								<p class="card-text text-muted mb-3">
-									Sistema completo de gerenciamento acadêmico com backend robusto em PHP/MySQL e
-									frontend interativo.
-								</p>
-								<div class="tech-badges mb-3">
-									<span class="badge bg-danger">PHP</span>
-									<span class="badge bg-danger">MySQL</span>
-									<span class="badge bg-danger">Bootstrap</span>
-									<span class="badge bg-danger">AJAX</span>
+						<a href="https://github.com/joaomesq/Portal_academico" target="_blank" rel="noopener noreferrer"
+							class="project-link" aria-label="Ver projeto Portal Acadêmico no GitHub">
+							<div class="card project-card h-100 border-0 shadow-lg overflow-hidden">
+								<span class="badge bg-secondary project-status-badge">GitHub</span>
+								<div class="img-wrap">
+									<img src="./img/cefac1.png" alt="Portal Acadêmico">
 								</div>
-								<a href="https://github.com/joaomesq/Portal_academico" target="_blank"
-									class="btn btn-outline-primary btn-sm">
-									Ver no GitHub <i class="material-symbols-outlined ms-2"
-										style="font-size: 18px;">arrow_forward</i>
-								</a>
+								<div class="card-body">
+									<h5 class="card-title fw-bold mb-3">Portal Acadêmico</h5>
+									<p class="card-text text-muted mb-3">
+										Sistema completo de gerenciamento acadêmico com backend robusto em PHP/MySQL e
+										frontend interativo.
+									</p>
+									<div class="tech-badges mb-3">
+										<span class="badge bg-danger">PHP</span>
+										<span class="badge bg-danger">MySQL</span>
+										<span class="badge bg-danger">Bootstrap</span>
+										<span class="badge bg-danger">AJAX</span>
+									</div>
+									<div class="cta-row">
+										<span>Ver no GitHub</span>
+										<span class="cta-icon">
+											<i class="material-symbols-outlined" style="font-size: 18px;">arrow_forward</i>
+										</span>
+									</div>
+								</div>
 							</div>
-						</div>
+						</a>
 					</div>
 
 					<!-- Project 3 -->
 					<div class="col-lg-6 col-md-12">
-						<div class="card project-card h-100 border-0 shadow-lg overflow-hidden">
-							<img src="./img/hbs2.jpeg" class="card-img-top" alt="Site HBS"
-								style="height: 250px; object-fit: cover;">
-							<div class="card-body">
-								<h5 class="card-title fw-bold mb-3">Academia de Cursos Profissionais</h5>
-								<p class="card-text text-muted mb-3">
-									Website moderno e responsivo para instituição de ensino profissional, com design
-									UX/UI otimizado.
-								</p>
-								<div class="tech-badges mb-3">
-									<span class="badge bg-success">HTML5</span>
-									<span class="badge bg-success">CSS3</span>
-									<span class="badge bg-success">JavaScript</span>
-									<span class="badge bg-success">Mobile-First</span>
+						<a href="https://chanaxtec.github.io" target="_blank" rel="noopener noreferrer"
+							class="project-link" aria-label="Ver projeto Academia de Cursos Profissionais">
+							<div class="card project-card h-100 border-0 shadow-lg overflow-hidden">
+								<span class="badge bg-success project-status-badge">Live</span>
+								<div class="img-wrap">
+									<img src="./img/hbs2.jpeg" alt="Site HBS">
 								</div>
-								<a href="https://chanaxtec.github.io" target="_blank"
-									class="btn btn-outline-primary btn-sm">
-									Ver Projeto <i class="material-symbols-outlined ms-2"
-										style="font-size: 18px;">arrow_forward</i>
-								</a>
+								<div class="card-body">
+									<h5 class="card-title fw-bold mb-3">Academia de Cursos Profissionais</h5>
+									<p class="card-text text-muted mb-3">
+										Website moderno e responsivo para instituição de ensino profissional, com
+										design UX/UI otimizado.
+									</p>
+									<div class="tech-badges mb-3">
+										<span class="badge bg-success">HTML5</span>
+										<span class="badge bg-success">CSS3</span>
+										<span class="badge bg-success">JavaScript</span>
+										<span class="badge bg-success">Mobile-First</span>
+									</div>
+									<div class="cta-row">
+										<span>Ver Projeto</span>
+										<span class="cta-icon">
+											<i class="material-symbols-outlined" style="font-size: 18px;">arrow_forward</i>
+										</span>
+									</div>
+								</div>
 							</div>
-						</div>
+						</a>
 					</div>
 
 					<!-- Project 4 -->
 					<div class="col-lg-6 col-md-12">
-						<div class="card project-card h-100 border-0 shadow-lg overflow-hidden">
-							<img src="./img/nossaterrapng.png" class="card-img-top" alt="Portal Turismo"
-								style="height: 250px; object-fit: cover;">
-							<div class="card-body">
-								<h5 class="card-title fw-bold mb-3">Portal de Turismo Local</h5>
-								<p class="card-text text-muted mb-3">
-									Plataforma interativa para descobrir atrações turísticas locais com mapa integrado e
-									informações detalhadas.
-								</p>
-								<div class="tech-badges mb-3">
-									<span class="badge bg-info">HTML5</span>
-									<span class="badge bg-info">CSS3</span>
-									<span class="badge bg-info">JavaScript</span>
-									<span class="badge bg-info">Maps API</span>
+						<div class="project-link" aria-disabled="true" style="cursor: default;">
+							<div class="card project-card is-disabled h-100 border-0 shadow-lg overflow-hidden">
+								<span class="badge bg-warning text-dark project-status-badge">Em breve</span>
+								<div class="img-wrap">
+									<img src="./img/nossaterrapng.png" alt="Portal Turismo">
 								</div>
-								<a href="#" class="btn btn-outline-primary btn-sm">
-									Em desenvolvimento <i class="material-symbols-outlined ms-2"
-										style="font-size: 18px;">schedule</i>
-								</a>
+								<div class="card-body">
+									<h5 class="card-title fw-bold mb-3">Portal de Turismo Local</h5>
+									<p class="card-text text-muted mb-3">
+										Plataforma interativa para descobrir atrações turísticas locais com mapa
+										integrado e informações detalhadas.
+									</p>
+									<div class="tech-badges mb-3">
+										<span class="badge bg-info">HTML5</span>
+										<span class="badge bg-info">CSS3</span>
+										<span class="badge bg-info">JavaScript</span>
+										<span class="badge bg-info">Maps API</span>
+									</div>
+									<div class="cta-row">
+										<span>Em desenvolvimento</span>
+										<span class="cta-icon">
+											<i class="material-symbols-outlined" style="font-size: 18px;">schedule</i>
+										</span>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -301,7 +450,7 @@
 							</div>
 							<div class="skill-item mb-3">
 								<div class="d-flex justify-content-between mb-2">
-									<span class="fw-bold text-secondary">CSS3 / SCSS</span>
+									<span class="fw-bold text-secondary">CSS3</span>
 									<span class="badge bg-primary">85%</span>
 								</div>
 								<div class="progress" role="progressbar" aria-valuenow="85" aria-valuemin="0"
@@ -312,11 +461,11 @@
 							<div class="skill-item mb-3">
 								<div class="d-flex justify-content-between mb-2">
 									<span class="fw-bold text-secondary">JavaScript</span>
-									<span class="badge bg-primary">70%</span>
+									<span class="badge bg-primary">65%</span>
 								</div>
-								<div class="progress" role="progressbar" aria-valuenow="70" aria-valuemin="0"
+								<div class="progress" role="progressbar" aria-valuenow="65" aria-valuemin="0"
 									aria-valuemax="100">
-									<div class="progress-bar" style="width: 70%"></div>
+									<div class="progress-bar" style="width: 65%"></div>
 								</div>
 							</div>
 							<div class="skill-item mb-3">
@@ -353,11 +502,11 @@
 							<div class="skill-item mb-3">
 								<div class="d-flex justify-content-between mb-2">
 									<span class="fw-bold text-secondary">Python</span>
-									<span class="badge bg-danger">75%</span>
+									<span class="badge bg-danger">65%</span>
 								</div>
-								<div class="progress" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+								<div class="progress" role="progressbar" aria-valuenow="65" aria-valuemin="0"
 									aria-valuemax="100">
-									<div class="progress-bar bg-danger" style="width: 75%"></div>
+									<div class="progress-bar bg-danger" style="width: 65%"></div>
 								</div>
 							</div>
 							<div class="skill-item mb-3">
@@ -373,11 +522,11 @@
 							<div class="skill-item mb-3">
 								<div class="d-flex justify-content-between mb-2">
 									<span class="fw-bold text-secondary">REST APIs</span>
-									<span class="badge bg-danger">70%</span>
+									<span class="badge bg-danger">50%</span>
 								</div>
-								<div class="progress" role="progressbar" aria-valuenow="70" aria-valuemin="0"
+								<div class="progress" role="progressbar" aria-valuenow="50" aria-valuemin="0"
 									aria-valuemax="100">
-									<div class="progress-bar bg-danger" style="width: 70%"></div>
+									<div class="progress-bar bg-danger" style="width: 50%"></div>
 								</div>
 							</div>
 						</div>
@@ -393,11 +542,11 @@
 							<div class="skill-item mb-3">
 								<div class="d-flex justify-content-between mb-2">
 									<span class="fw-bold text-secondary">Docker</span>
-									<span class="badge bg-info">80%</span>
+									<span class="badge bg-info">70%</span>
 								</div>
-								<div class="progress" role="progressbar" aria-valuenow="80" aria-valuemin="0"
+								<div class="progress" role="progressbar" aria-valuenow="70" aria-valuemin="0"
 									aria-valuemax="100">
-									<div class="progress-bar bg-info" style="width: 80%"></div>
+									<div class="progress-bar bg-info" style="width: 70%"></div>
 								</div>
 							</div>
 							<div class="skill-item mb-3">
@@ -423,11 +572,11 @@
 							<div class="skill-item mb-3">
 								<div class="d-flex justify-content-between mb-2">
 									<span class="fw-bold text-secondary">Agile / Scrum</span>
-									<span class="badge bg-info">70%</span>
+									<span class="badge bg-info">65%</span>
 								</div>
-								<div class="progress" role="progressbar" aria-valuenow="70" aria-valuemin="0"
+								<div class="progress" role="progressbar" aria-valuenow="65" aria-valuemin="0"
 									aria-valuemax="100">
-									<div class="progress-bar bg-info" style="width: 70%"></div>
+									<div class="progress-bar bg-info" style="width: 65%"></div>
 								</div>
 							</div>
 						</div>
